@@ -1,0 +1,11 @@
+---
+categories: news
+layout: news-layout
+title: Rest In Peace Sheaffy‏
+date: 2013-07-02
+current: false
+teaser: On the 3rd of June our friend and team rider Lee Sheaff lost his battle with cancer.
+images: ['sheaffy1.jpg','sheaffy2.jpg','sheaffy3.jpg','sheaffy4.jpg','sheaffy5.jpg','sheaffy6.jpg','sheaffy7.jpg','sheaffy8.jpg','sheaffy9.jpg']
+---
+On the 3rd of June our friend and team rider Lee Sheaff lost his battle with cancer.  Lee was a fantastic all-round surfer and a damn good ambassador for LY Surfboards.  His grin and his enthusiasm to surf in any conditions will be seriously missed by everybody who had the honour to come into contact with him.  Our thoughts and love go to his wife, his parents and sisters and also his beloved dog, Charlie.  Goodbye mate.
+

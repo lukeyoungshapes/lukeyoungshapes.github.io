@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<div class="lightcontainer">
+    <div class="maincontent">
+        <h2> {{ page.title }} </h2>
+
+        <div class="section group">
+            <div class="col span_2_of_3">
+                {{ page.content }}
+            </div>
+            <div class="col span_1_of_3">
+                <div class="photo-container">
+                    <img class="photo" src="/images/shaping2.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="standardcontainer">
+    <div class="maincontent">
+        <div class="section group">
+            <div class="col span_1_of_3">
+                <h3>Vitals</h3>
+                Wave Size: {{ page.waveSize }}<br/>
+                Experience: {{ page.ability }} <br/>
+                {% if page.simpleDims %}
+                Dimensions: From <%- @document.simpleDims.from %> to <%- @document.simpleDims.to %> <br/>
+                {% endif %}
+            </div>
+            <div class="col span_2_of_3">
+                {% if page.typicalDims %}
+                <table class="centered-table">
+                    <thead>
+                    <tr>
+                        <td><h3>Typical Dimensions</h3></td>
+                        <td><h3>Litres</h3></td>
+                    </tr>
+                    </thead>
+                    {% for k in page.typicalDims %}
+                    <tr>
+                        <td>{{ k[0] }}</td>
+                        <td> {{ k[1] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="darkcontainer">
+    <div class="maincontent">
+        <h3>Images</h3>
+
+        <div class="section group">
+            <div class="col span_1_of_3">
+                {% assign topImageLarge = page.images.topLarge %}
+                {% unless topImageLarge %}
+                {% assign topImageLarge = page.images.top %}
+                {% endunless %}
+
+                {% assign topImage = page.images.top %}
+                {% unless topImage %}
+                {% assign topImage = "awaiting.png" %}
+                {% endunless %}
+                <a href="/images/boards/{{ topImageLarge }}" class="nch-lightbox">
+                    <div class="board-image-container" style="background-image: url(/images/boards/{{ topImage }})">
+                    </div>
+                </a>
+            </div>
+            <div class="col span_1_of_3">
+                {% assign bottomImageLarge = page.images.bottomLarge %}
+                {% unless bottomImageLarge %}
+                {% assign bottomImageLarge = page.images.bottom %}
+                {% endunless %}
+
+                {% assign bottomImage = page.images.bottom %}
+                {% unless bottomImage %}
+                {% assign bottomImage = "awaiting.png" %}
+                {% endunless %}
+                <a href="/images/boards/{{ bottomImageLarge }}" class="nch-lightbox">
+                    <div class="board-image-container" style="background-image: url(/images/boards/{{ bottomImage }})">
+                    </div>
+                </a>
+            </div>
+            <div class="col span_1_of_3">
+                {% assign profileImageLarge = page.images.profileLarge %}
+                {% unless profileImageLarge %}
+                {% assign profileImageLarge = page.images.profile %}
+                {% endunless %}
+
+                {% assign profileImage = page.images.profile %}
+                {% unless profileImage %}
+                {% assign profileImage = "awaiting.png" %}
+                {% endunless %}
+                <a href="/images/boards/{{ profileImageLarge }}" class="nch-lightbox">
+                    <div class="board-image-container" style="background-image: url(/images/boards/{{ profileImage }})">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

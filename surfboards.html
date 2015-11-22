@@ -1,0 +1,170 @@
+---
+layout: default
+title: Surfboards
+---
+
+{% assign currentShortboards = site.boards | where : 'type' , 'shortboard' | where: 'current', true | sort: 'order'  %}
+{% assign oldShortboards = site.boards | where : 'type' , 'shortboard' | where: 'current', false | sort: 'order'  %}
+{% assign gromShortboards = site.boards | where : 'type' , 'grom' | sort: 'order'  %}
+{% assign bigWaveBoards = site.boards | where : 'type' , 'big-wave' | sort: 'order'  %}
+
+
+{% assign oldSkool = site.boards | where : 'type' , 'oldskool' | sort: 'order'  %}
+{% assign longboards = site.boards | where : 'type' , 'longboard' | sort: 'order'  %}
+{% assign otherboards = site.boards | where : 'type' , 'otherboard' | sort: 'order'  %}
+
+
+<div class="lightcontainer">
+    <div class="maincontent">
+        <h2>Popular models</h2>
+        <h4>Models in general wave power order, all boards available with futures/fcs/fcs2 or lokbox fin system</h4>
+
+        <div class="section group">
+            <div class="section group">
+                {% for board in currentShortboards offset:0 limit:4 %}
+                <div class="col span_1_of_4">
+                    <a href="{{board.url}}">
+                        <h3>{{ board.title }}</h3>
+
+                        <div class="board-icon-container">
+                            <img src="/images/{{board.logo}}">
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="section group">
+                {% for board in currentShortboards offset:4 limit:3 %}
+                <div class="col span_1_of_3">
+                    <a href="{{board.url}}">
+                        <h3><{{ board.title }}</h3>
+
+                        <div class="board-icon-container">
+                            <img src="/images/{{board.logo}}">
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="darkcontainer">
+    <div class="maincontent">
+        <h2>Grom</h2>
+
+        <div class="section group">
+            {% for board in gromShortboards %}
+            <div class="col span_1_of_1">
+                <a href="{{board.url}}">
+                    <h3>{{ board.title }}</h3>
+
+                    <div class="board-icon-container">
+                        <img src="/images/{{board.logo}}">
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="standardcontainer">
+    <div class="maincontent">
+        <h2>Big wave</h2>
+
+        <div class="section group">
+            {% for board in bigWaveBoards %}
+            <div class="col span_1_of_3">
+                <a href="{{board.url}}">
+                    <h3>{{ board.title }}</h3>
+
+                    <div class="board-icon-container">
+                        <img src="/images/{{board.logo}}">
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="darkcontainer">
+    <div class="maincontent">
+        <h2>Archive models</h2>
+
+        <div class="darkcontainer">
+            <div class="maincontent">
+                <h2>Shortboards</h2>
+                {% assign currentLoopCounter=0 %}
+                {% for board in oldShortboards %}
+                {% assign multipleOfFive = currentLoopCounter | modulo:5 %}
+                {% if multipleOfFive == 0 %}
+                {% if currentLoopCounter >0%}
+            </div>
+            {% endif%}
+            <div class="section group">
+                {% endif %}
+                <div class="col span_1_of_5">
+                    <a href="{{ board.url }}"><h3>{{ board.title }}</h3></a>
+                </div>
+                {% assign currentLoopCounter=currentLoopCounter | plus: 1 %}
+                {% endfor %}
+                {% if currentLoopCounter > 0 %}
+            </div>
+            {% endif %}
+
+        </div>
+        <div class="lightcontainer">
+            <div class="maincontent">
+                <h2>Oldskool/alternative</h2>
+                {% assign currentLoopCounter=0 %}
+                {% for board in oldSkool %}
+                {% assign multipleOfFive = currentLoopCounter | modulo:5 %}
+                {% if multipleOfFive == 0 %}
+                {% if currentLoopCounter >0%}
+            </div>
+            {% endif%}
+            <div class="section group">
+                {% endif %}
+                <div class="col span_1_of_5">
+                    <a href="{{ board.url }}"><h3>{{ board.title }}</h3></a>
+                </div>
+                {% assign currentLoopCounter=currentLoopCounter | plus: 1 %}
+                {% endfor %}
+                {% if currentLoopCounter > 0 %}
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="darkcontainer">
+            <div class="maincontent">
+                <h2>Longboards</h2>
+
+                <div class="section group">
+                    {% for board in longboards :limit 4 %}
+                    <div class="col span_1_of_4">
+                        <a href="{{ board.url }}"><h3>{{ board.title }}</h3></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="standardcontainer">
+            <div class="maincontent">
+                <h2>Other stuff</h2>
+
+                <div class="section group">
+                    {% for board in otherboards :limit 3 %}
+                    <div class="col span_1_of_3">
+                        <a href="{{ board.url }}"><h3>{{ board.title }}</h3></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

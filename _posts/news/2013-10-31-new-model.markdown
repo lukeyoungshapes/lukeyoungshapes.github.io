@@ -1,0 +1,9 @@
+---
+categories: news
+layout: news-layout
+title: New model
+date: 2012-07-19
+current: false
+teaser: We've unleashed another model. Check out the <a href="http://www.lukeyoungshapes.co.uk/surfboards/shortboard/inch pincher">inch pincher</a>
+---
+We've unleashed another model.Check out the <a href="http://www.lukeyoungshapes.co.uk/surfboards/shortboard/inch pincher">inch pincher</a>

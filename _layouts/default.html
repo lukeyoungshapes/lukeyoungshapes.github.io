@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- HTML5 Mobile Boilerplate -->
+<!--[if IEMobile 7]>
+<html class="no-js iem7"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]>
+<html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Site Properities -->
+    <title>{{site.title}}</title>
+    <meta name="description" content="{{site.description}}"/>
+    <meta name="keywords" content="{{site.keywords}}"/>
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="shortcut icon" href="/icons/favicon.ico"/>
+
+    <link rel="stylesheet" href="/scripts/normalize.min.css"/>
+    <link rel="stylesheet" href="/css/html5reset.css"/>
+    <link rel="stylesheet" href="/css/responsivegridsystem.css"/>
+    <link rel="stylesheet" href="/css/col.css"/>
+    <link rel="stylesheet" href="/css/1cols.css"/>
+    <link rel="stylesheet" href="/css/2cols.css"/>
+    <link rel="stylesheet" href="/css/3cols.css"/>
+    <link rel="stylesheet" href="/css/4cols.css"/>
+    <link rel="stylesheet" href="/css/5cols.css"/>
+    <link rel="stylesheet" href="/css/nchlightbox-1.3.css"/>
+
+    <script defer="defer" src="/scripts/modernizr.js"></script>
+
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+    <link href="/css/lightbox.css" rel="stylesheet">
+
+</head>
+<body class="{{ page.title | downcase | replace: ' ','-') }}">
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-11262355-1']);
+    _gaq.push(['_setDomainName', 'lukeyoungshapes.co.uk']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+<div id="wrapper">
+    <div id="headcontainer">
+        <header style="background-color: #dd2233">
+            <a id="toggleMenu" class="toggleMenu" href="#">Menu</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news.html">News</a></li>
+                    <li><a href="/action.html">Action</a></li>
+                    <li><a href="/production.html">Production</a></li>
+                    <li><a href="/surfboards.html">Surfboards</a></li>
+                    <li><a href="/merchandise.html">Merchandise</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <!--  <li><a href="/order.html">Order</a></li> -->
+                </ul>
+            </nav>
+
+            <div id="social-bar">
+                <a class="facebook"  title="Facebook" href="https://www.facebook.com/luke.young.56481"></a>
+                <a class="twitter" title="Twitter" href="https://twitter.com/LYSurfboards"></a>
+            </div>
+
+            <a href="/">
+                <div id="logo"></div>
+            </a>
+         </header>
+
+    </div>
+
+    <div id="maincontentcontainer">
+        {{ content }}
+    </div>
+    <div id="footercontainer">
+        <footer class="group">
+            <h3>© Copyright 2015 Luke Young Shapes</h3>
+
+            <div id="view-options">
+                <span id="view-full">View Full Site</span>
+                <span id="view-responsive">View Mobile Optimized</span>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/scripts/jquery.js"><\/script>')</script>
+<script defer="defer" src="/scripts/log.js"></script>
+<script defer="defer" src="/scripts/script.js"></script>
+<script defer="defer" src="/scripts/plugins.js"></script>
+<script defer="defer" src="/scripts/cufon-yui.js"></script>
+<script defer="defer" src="/scripts/Bebas_Neue_400-font.js"></script>
+<script defer="defer" src="/scripts/cufon.js"></script>
+<script defer="defer" src="/scripts/jquery.hammer.min.js"></script>
+<script defer="defer" src="/scripts/jquery.nchlightbox-1.3.js"></script>
+<script>
+
+
+    $("#toggleMenu").click(
+            function (e) {
+                e.preventDefault();
+                $(this).toggleClass("active");
+                $("nav").toggle();
+            }
+    );
+
+    (function ($) {
+        $(document).ready(function () {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
+                $("#wrapper").css("min-height", $(window).height() - 67 + "px");
+
+                $.extend( $.fn.nchlightbox.defaults, {
+
+                    usecolor: true,
+                    backlight: "#000"
+                });
+
+
+            }, 100);
+
+            var targetWidth = '1024';
+            var deviceWidth = 'device-width';
+            var viewport = $('meta[name="viewport"]');
+
+            localStorage.isResponsive = (localStorage.isResponsive == undefined) ? 'true' : localStorage.isResponsive;
+
+            var showFullSite = function () {
+                viewport.attr('content', 'width=' + targetWidth);
+                $('#view-responsive').show();
+                $('#view-full').hide();
+
+                localStorage.isResponsive = 'false';
+            }
+
+            var showMobileOptimized = function () {
+                localStorage.isResponsive = 'true';
+                viewport.attr('content', 'width=' + deviceWidth);
+                $('#view-full').show();
+                $('#view-responsive').hide();
+            }
+
+// if the user previously chose to view full site, change the viewport
+            if (Modernizr.localstorage) {
+                if (localStorage.isResponsive == 'false') {
+                    showFullSite();
+                }
+            }
+
+            $("#view-full").on("click", function () {
+                showFullSite();
+            });
+
+            $('#view-options').on("click", "#view-responsive", function () {
+                showMobileOptimized();
+            });
+
+
+            //enable the pretty photo plugin if not on mobile
+            var container = document.getElementById('news-image-container');
+
+            if ($('#view-full').css('display') == 'none') {
+
+                if (container) {
+                    setTimeout(function () {
+                        $(container).fadeIn();
+                        var myPackery = new Packery(container, {
+                            itemSelector: '.item',
+                            gutter: 20
+                        });
+                    }, 1500);
+                }
+            } else {
+                if (container) {
+                    $(container).fadeIn();
+                }
+            }
+
+
+
+        });
+        $(window).bind('orientationchange resize', function (event) {
+            var orient = window.orientation;
+            if (orient == 0) { //0 = portrait, -90 or 90 = landscape
+                window.scrollTo(0, 0);
+            } else {
+                window.scrollTo(0, 0);
+            }
+        });
+
+    })(jQuery);
+
+</script>
+
+
+</body>
+</html>

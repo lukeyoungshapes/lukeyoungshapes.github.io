@@ -1,0 +1,84 @@
+---
+layout: default
+title: Luke Young Shapes
+---
+
+<div class="standardcontainer">
+    <div class="maincontent">
+        <h2>Why Choose LY Surfboards?</h2>
+
+        <div class="section group ">
+            <div class="col span_2_of_3">
+                At LY Surfboards we appreciate that no two surfers are the same, that's why we have such a diverse range of models to cater for any style or ability - from
+                beginners boards right through to big guns and tow boards. Even though we use models we are still a 'custom surfboards' business. We tailor every board to each
+                individual customers requirements- also if a customer has an idea of their own we're more than happy to build it for them.
+                With the combination of only the most premium quality materials, second to none craftsmanship and the best possible customer care, we strive for the ultimate
+                service.
+            </div>
+            <div class="col span_1_of_3">
+                <div class="photo-container">
+                    <img class="photo" src="/images/rapa5_1.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="darkcontainer">
+    <div class="maincontent">
+
+        <div class="video-wrapper">
+            <iframe src="//player.vimeo.com/video/100093476" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p><a href="http://vimeo.com/100093476">Luke Young Performance Surfboards</a> from <a href="http://vimeo.com/offtheboat">Off The Boat</a> on <a
+                    href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="lightcontainer">
+    <div class="maincontent">
+        <h2>Latest News</h2>
+
+
+        <div class="section group">
+            {% assign recentNews = site.categories.news | where: 'current', true | sort: 'date' | reverse %}
+            {% for article in recentNews limit:3 offset:0 %}
+            <div class="col span_1_of_3">
+                <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+                <div>{{article.teaser }}</div>
+            </div>
+            {% endfor %}
+        </div>
+
+
+    </div>
+</div>
+<div class="darkcontainer">
+    <div class="maincontent">
+        <h2>About Luke</h2>
+
+        <div class="section group ">
+            <div class="col span_1_of_3">
+                <div class="photo-container light-shadow">
+                    <img class="photo" src="/images/channels_0.jpg"/>
+                </div>
+            </div>
+            <div class="col span_2_of_3">
+                Now in his mid 30s, Luke has over 15 years of "off the blank" specialist shaping under his belt. This
+                experience has lead to highly refined rocker lines, concaves and overall foils of his custom surfboards.
+                All shapes are field tested by the shaper himself as well as team riders in national and international
+                conditions.
+
+                All abilities and tastes catered for from high performance shortboards to ten foot triple stringer mals,
+                twin fin retro boards to travel boards and tow boards. You name it, we can provide it to the highest
+                possible quality and performance.
+                Machine profile programs are also available to replicate that magic board
+
+                Luke has been shaping with Brian Bulkley (Bulkley surfboards, Lost surfboards), Hawaii's legendary gun
+                shaper Pat Rawson (Rawson Surfboards Hawaii) and more recently Rob Vaughan of Billabong surfboards
+                Europe.
+            </div>
+        </div>
+    </div>
+</div>

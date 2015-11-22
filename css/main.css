@@ -1,0 +1,509 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+
+.toggleMenu {
+    display:  inline-block;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+
+.centered-table{
+    width:50%;
+    margin:auto;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+.nav ul {
+    display: block;
+    width: 100%;
+}
+.nav > ul > li.hover > ul , .nav li li.hover ul {
+    position: static;
+}
+
+aside{
+     display:none;
+}
+
+nav {
+    list-style: none;
+    *zoom: 1;
+    background:#175e4c;
+    position: relative;
+    float:right;
+    clear:both;
+    width:100%;
+    display: none;
+}
+nav:before,
+nav:after {
+    content: " ";
+    display: table;
+}
+nav:after {
+    clear: both;
+}
+nav ul {
+    list-style: none;
+   /* width: 19em;*/
+}
+nav a {
+    padding: 10px 15px;
+    color:#fff;
+    *zoom: 1;
+}
+
+
+nav > ul > li > a {
+    display: block;
+}
+nav li ul {
+    position: absolute;
+    left: -9999px;
+    z-index: 100;
+}
+nav li li a {
+    display: block;
+    background: #1d7a62;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+nav li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+
+
+#view-options span {
+    display: block;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#view-options #view-responsive{
+    display:none;
+}
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Column Stuff
+   ========================================================================== */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*  GRID COLUMN SETUP   ============================================================================= */
+
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 0%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+
+    .span_3_of_3 {
+        width: 100%;
+    }
+    .span_2_of_3 {
+        width: 100%;
+    }
+    .span_1_of_3 {
+        width: 100%;
+    }
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    aside{
+        display:block;
+    }
+
+    .toggleMenu {
+        display:  none;
+    }
+
+    nav {
+        display: block;
+    }
+    nav > ul > li {
+        float: left;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+       }
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+        .toggleMenu {
+            display:  none;
+            background: #666;
+            padding: 10px 15px;
+            color: #fff;
+        }
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 100%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+
+
+    /* ==============
+    Column stuff
+    =================*/
+
+
+    .col {
+        margin: 1% 0 1% 1.6%;
+    }
+
+
+    .span_3_of_3 {
+        width: 100%;
+    }
+
+    .span_2_of_3 {
+        width: 66.1%;
+    }
+
+    .span_1_of_3 {
+        width: 32.2%;
+    }
+
+    span#view-full {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

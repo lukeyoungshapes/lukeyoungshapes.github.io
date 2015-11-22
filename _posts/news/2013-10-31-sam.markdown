@@ -1,0 +1,9 @@
+---
+layout: news-layout
+title: Slam
+date: 2012-07-16
+categories: news
+current: false
+teaser: "For the last few months Luke has been working with Sam Lamiroy (and alot of foam) on some boards and the outcome is a couple of ..."
+---
+For the last few months Luke has been working with Sam Lamiroy (and alot of foam) on some boards and the outcome is a couple of 6'2" gassers and a 5'10" mini zero now under Mr. Lamiroys twinkly toes - " there are just some situations where boards built from alternative materials just start to falter". This is where your good, old fasioned PU board comes in... and a bloke called Mr.Young. We'll keep you posted with how he gets on.

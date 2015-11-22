@@ -1,0 +1,9 @@
+---
+categories: news
+layout: news-layout
+title: "Robots and Mini zeros are the weapons of choice at the Wadi wave pool Dubai!"
+date: 2012-07-18
+current: false
+teaser: Take a look on <a href="http://www.youtube.com/watch?v=ntrmFco0Er8">YouTube</a>
+---
+Take a look on <a href="http://www.youtube.com/watch?v=ntrmFco0Er8">YouTube</a>

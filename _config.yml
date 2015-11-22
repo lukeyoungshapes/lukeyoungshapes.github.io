@@ -1,0 +1,16 @@
+# Site settings
+title: Luke Young Shapes
+email: your-email@domain.com
+description: Luke Young Shapes.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.lukeyoungshapes.co.uk" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+collections:
+  boards:
+    output: true
+

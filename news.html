@@ -1,0 +1,28 @@
+---
+layout: default
+title: News
+---
+
+{% assign newsItems = site.categories.news | sort: 'date' | reverse %}
+<div class="{% cycle 'lightcontainer', 'standardcontainer', 'darkcontainer' %}">
+    <div class="maincontent">
+        <div class="section group">
+            {% for article in newsItems  offset:0 limit:3 %}
+            <div class="col span_1_of_3">
+                <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+                <div>{{ article.content }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="section group">
+            {% for article in newsItems  offset:3 limit:3 %}
+            <div class="col span_1_of_3">
+                <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+                <div>{{ article.content }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

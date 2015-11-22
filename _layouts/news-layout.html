@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<script src="/scripts/packery.pkgd.min.js"></script>
+
+<div>
+    <div class="lightcontainer">
+        <div class="maincontent">
+            <h2>{{ page.title }}</h2>
+            {{ content }}
+            {% if (page.images)  %}
+            <div id="news-image-container" style="display:none">
+                {% for photo in page.images %}
+                <div class="item">
+                    <a href="/images/news/{{ photo }}" >
+                        <img src="/images/news/thumbs/{{ photo }}"  />
+                    </a>
+                </div>
+
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
