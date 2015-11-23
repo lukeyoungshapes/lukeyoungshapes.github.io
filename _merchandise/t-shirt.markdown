@@ -1,9 +1,8 @@
 ---
-layout: shop
-title: Hoody
+name: T-shirt
 current: true
 price: 18.00
-description: A Hoody
+description: A T-shirt
 order: 0
 sku: 002
 ---
