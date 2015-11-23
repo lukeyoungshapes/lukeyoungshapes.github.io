@@ -2,10 +2,24 @@
 layout: default
 title: Merchandise
 ---
+{% assign allMerchandise = site.merchandise  %}
+
 <div class="lightcontainer">
     <div class="maincontent">
         <h2>Merchandise</h2>
+        {% for product in allMerchandise  %}
         <div class="section group">
+            {% include product.html  %}
         </div>
+        {% endfor %}
     </div>
 </div>
+
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.snipcart.com/scripts/snipcart.js" id="snipcart"
+        data-api-key="MjZkNjJiZmUtNWM2OC00OTA5LTkwNDEtODVlNTViNDY2ZGE0"></script>
+
+<link type="text/css" href="https://cdn.snipcart.com/themes/base/snipcart.min.css" rel="stylesheet" />

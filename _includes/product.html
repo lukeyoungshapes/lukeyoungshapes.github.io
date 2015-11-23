@@ -1,0 +1,42 @@
+<div>
+    <div class="lightcontainer">
+        <div class="maincontent">
+            <h2>{{ product.title }}</h2>
+            {{ product.content }}
+
+            {%if product.sizes %}
+            <select>
+                {% for size in product.sizes %}
+                <option value="{{size}}">{{size}}</option>
+                {% endfor %}
+            </select>
+            {% endif %}
+            {%if product.colours %}
+            <select>
+                {% for colour in product.colours %}
+                <option value="{{colour}}">{{colour}}</option>
+                {% endfor %}
+            </select>
+            {% endif %}
+            {% if (product.images)  %}
+            <div id="image-container" style="display:none">
+                {% for photo in product.images %}
+                <div class="item">
+                        <img src="{{ photo }}"  />
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+
+
+        </div>
+        <button class="snipcart-add-item"
+                data-item-name="{{product.name}}"
+                data-item-id="{{product.sku}}"
+                data-item-url="{{site.baseurl}}"
+                data-item-price="{{product.price}}">
+            Buy it for {{product.price}} $
+        </button>
+    </div>
+</div>

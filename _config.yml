@@ -13,4 +13,4 @@ markdown: kramdown
 collections:
   boards:
     output: true
-
+  merchandise:

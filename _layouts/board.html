@@ -28,7 +28,7 @@ layout: default
                 Wave Size: {{ page.waveSize }}<br/>
                 Experience: {{ page.ability }} <br/>
                 {% if page.simpleDims %}
-                Dimensions: From <%- @document.simpleDims.from %> to <%- @document.simpleDims.to %> <br/>
+                Dimensions: From {{ page.simpleDims.from }} to {{ page.simpleDims.to }} <br/>
                 {% endif %}
             </div>
             <div class="col span_2_of_3">
