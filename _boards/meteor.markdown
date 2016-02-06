@@ -2,7 +2,7 @@
 layout: board
 title: "Meteor"
 images:
-    top: "meteor.jpg"
+    top: "meteor-top.jpg"
     topLarge: "meteor-top-lrg.jpg"
     bottom: "meteor-bottom.jpg"
     bottomLarge: "meteor-bottom-lrg.jpg"
