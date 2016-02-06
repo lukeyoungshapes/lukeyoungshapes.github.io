@@ -24,8 +24,6 @@ title: Surfboards
                 {% for board in currentShortboards offset:0 limit:4 %}
                 <div class="col span_1_of_4">
                     <a href="{{board.url}}">
-                        <h3>{{ board.title }}</h3>
-
                         <div class="board-icon-container">
                             <img src="/images/{{board.logo}}">
                         </div>
@@ -37,8 +35,6 @@ title: Surfboards
                 {% for board in currentShortboards offset:4 limit:3 %}
                 <div class="col span_1_of_3">
                     <a href="{{board.url}}">
-                        <h3><{{ board.title }}</h3>
-
                         <div class="board-icon-container">
                             <img src="/images/{{board.logo}}">
                         </div>
@@ -58,8 +54,6 @@ title: Surfboards
             {% for board in gromShortboards %}
             <div class="col span_1_of_1">
                 <a href="{{board.url}}">
-                    <h3>{{ board.title }}</h3>
-
                     <div class="board-icon-container">
                         <img src="/images/{{board.logo}}">
                     </div>
@@ -79,10 +73,6 @@ title: Surfboards
             <div class="col span_1_of_3">
                 <a href="{{board.url}}">
                     <h3>{{ board.title }}</h3>
-
-                    <div class="board-icon-container">
-                        <img src="/images/{{board.logo}}">
-                    </div>
                 </a>
             </div>
             {% endfor %}

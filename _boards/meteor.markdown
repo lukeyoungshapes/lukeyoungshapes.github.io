@@ -11,7 +11,7 @@ images:
 current: true
 order: 2
 type: shortboard
-logo: boards/logo/half-pint.png
+logo: boards/logo/meteor.png
 shortDescription: ""
 waveSize: "0-6ft"
 ability: "intermediate"
