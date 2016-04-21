@@ -32,8 +32,8 @@ title: Surfboards
                 {% endfor %}
             </div>
             <div class="section group">
-                {% for board in currentShortboards offset:4 limit:3 %}
-                <div class="col span_1_of_3">
+                {% for board in currentShortboards offset:4 limit:4 %}
+                <div class="col span_1_of_4">
                     <a href="{{board.url}}">
                         <div class="board-icon-container">
                             <img src="/images/{{board.logo}}">
