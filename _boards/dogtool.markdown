@@ -1,7 +1,7 @@
 ---
 layout: board
 type: shortboard
-current: true
+current: false
 order: 5
 title: Dog Tool
 images:

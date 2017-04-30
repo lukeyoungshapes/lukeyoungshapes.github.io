@@ -8,6 +8,7 @@ images:
     bottomLarge: "mako-bottom.jpg"
     profile: "mako-profile.jpg"
     profileLarge: "mako-profile.jpg"
+topImage: "/images/boards/mako-channels.jpg"
 current: true
 order: 5
 type: shortboard

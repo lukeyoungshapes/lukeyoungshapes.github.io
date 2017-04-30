@@ -3,8 +3,10 @@ layout: board
 title: Vulcan
 logo: boards/logo/vulcan.jpg
 images:
-    bottom: "vulcan.png"
-current: true
+    top: "vulcan-top.jpg"
+    bottom: "vulcan-bottom.jpg"
+    profile: "vulcan-profile.jpg"
+current: false
 order: 3
 simpleDims:
     from: "5'8"

@@ -8,6 +8,7 @@ images:
     bottomLarge: "half-pint-bottom-lrg.jpg"
     profile: "half-pint-profile.jpg"
     profileLarge: "half-pint-profile-lrg.jpg"
+topImage: "/images/boards/halfpint-action.png"
 current: false
 order: 8
 type: grom

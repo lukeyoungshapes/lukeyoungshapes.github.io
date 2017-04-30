@@ -12,7 +12,11 @@ layout: default
             </div>
             <div class="col span_1_of_3">
                 <div class="photo-container">
-                    <img class="photo" src="/images/shaping2.jpg"/>
+                    {% assign topImage = page.topImage %}
+                    {% unless topImage%}
+                    {% assign topImage = '/images/shaping2.jpg' %}
+                    {% endunless %}
+                    <img class="photo" src="{{ topImage }}"/>
                 </div>
             </div>
         </div>
@@ -68,7 +72,7 @@ layout: default
 
                 {% assign topImage = page.images.top %}
                 {% unless topImage %}
-                {% assign topImage = "awaiting.png" %}
+                {% assign topImage = "blank.png" %}
                 {% endunless %}
                 <a href="/images/boards/{{ topImageLarge }}" class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ topImage }})">
@@ -83,7 +87,7 @@ layout: default
 
                 {% assign bottomImage = page.images.bottom %}
                 {% unless bottomImage %}
-                {% assign bottomImage = "awaiting.png" %}
+                {% assign bottomImage = "blank.png" %}
                 {% endunless %}
                 <a href="/images/boards/{{ bottomImageLarge }}" class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ bottomImage }})">
@@ -98,7 +102,7 @@ layout: default
 
                 {% assign profileImage = page.images.profile %}
                 {% unless profileImage %}
-                {% assign profileImage = "awaiting.png" %}
+                {% assign profileImage = "blank.png" %}
                 {% endunless %}
                 <a href="/images/boards/{{ profileImageLarge }}" class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ profileImage }})">
@@ -106,6 +110,18 @@ layout: default
                 </a>
             </div>
         </div>
+        {% if page.otherImages %}
+        <div class="section group">
+            {% for image in page.otherImages %}
+            <div class="col span_1_of_3">
+                <a href="/images/boards/{{ image }}" class="nch-lightbox">
+                    <div class="board-image-container" style="background-image: url(/images/boards/{{ image }})">
+                    </div>
+                </a>
+            </div>
+            {% endfor%}
+        </div>
+        {% endif %}
     </div>
 </div>
 
