@@ -150,7 +150,7 @@
                 $("#wrapper").css("min-height", $(window).height() - 67 + "px");
 
                 $.extend( $.fn.nchlightbox.defaults, {
-
+                    keyboard: 1,
                     usecolor: true,
                     backlight: "#000"
                 });
@@ -220,7 +220,7 @@
         });
         $(window).bind('orientationchange resize', function (event) {
             var orient = window.orientation;
-            if (orient == 0) { //0 = portrait, -90 or 90 = landscape
+            if (orient === 0) { //0 = portrait, -90 or 90 = landscape
                 window.scrollTo(0, 0);
             } else {
                 window.scrollTo(0, 0);

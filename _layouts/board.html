@@ -74,7 +74,7 @@ layout: default
                 {% unless topImage %}
                 {% assign topImage = "blank.png" %}
                 {% endunless %}
-                <a href="/images/boards/{{ topImageLarge }}" class="nch-lightbox">
+                <a href="/images/boards/{{ topImageLarge }}" rel='boards' class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ topImage }})">
                     </div>
                 </a>
@@ -89,7 +89,7 @@ layout: default
                 {% unless bottomImage %}
                 {% assign bottomImage = "blank.png" %}
                 {% endunless %}
-                <a href="/images/boards/{{ bottomImageLarge }}" class="nch-lightbox">
+                <a href="/images/boards/{{ bottomImageLarge }}" rel='boards' class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ bottomImage }})">
                     </div>
                 </a>
@@ -104,7 +104,7 @@ layout: default
                 {% unless profileImage %}
                 {% assign profileImage = "blank.png" %}
                 {% endunless %}
-                <a href="/images/boards/{{ profileImageLarge }}" class="nch-lightbox">
+                <a href="/images/boards/{{ profileImageLarge }}" rel='boards' class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ profileImage }})">
                     </div>
                 </a>
@@ -114,7 +114,7 @@ layout: default
         <div class="section group">
             {% for image in page.otherImages %}
             <div class="col span_1_of_3">
-                <a href="/images/boards/{{ image }}" class="nch-lightbox">
+                <a href="/images/boards/{{ image }}" rel='boards' class="nch-lightbox">
                     <div class="board-image-container" style="background-image: url(/images/boards/{{ image }})">
                     </div>
                 </a>

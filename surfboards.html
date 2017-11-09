@@ -3,7 +3,7 @@ layout: default
 title: Surfboards
 ---
 
-{% assign currentShortboards = site.boards | where : 'type' , 'shortboard' | where: 'current', true | sort: 'order'  %}
+{% assign currentShortboards = site.boards | where: 'current', true | where_exp: "item", "item.order > 0" | sort: 'order'  %}
 {% assign oldShortboards = site.boards | where : 'type' , 'shortboard' | where: 'current', false | sort: 'order'  %}
 {% assign gromShortboards = site.boards | where : 'type' , 'grom' | sort: 'order'  %}
 {% assign bigWaveBoards = site.boards | where : 'type' , 'big-wave' | sort: 'order'  %}

@@ -8,8 +8,6 @@ images:
     bottomLarge: "meat-cleaver-bottom-lrg.jpg"
     profile: "meat-cleaver-profile.jpg"
     profileLarge: "meat-cleaver-profile-lrg.jpg"
-current: true
-order: 2
 type: big-wave
 logo: boards/logo/meat-cleaver.png
 shortDescription: ""

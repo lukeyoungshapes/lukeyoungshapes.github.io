@@ -3,8 +3,6 @@ layout: board
 title: Robot
 images:
     top: "robot.png"
-current: true
-order: 1
 type: shortboard
 logo: boards/logo/robot.jpg
 shortDescription: "blah blah "
