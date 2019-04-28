@@ -9,7 +9,7 @@ images:
     profile: "mako-profile.jpg"
     profileLarge: "mako-profile.jpg"
 topImage: "/images/boards/mako-channels.jpg"
-current: true
+current: false
 order: 5
 type: shortboard
 logo: boards/logo/mako.png

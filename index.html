@@ -27,19 +27,16 @@ title: Luke Young Shapes
 <div class="darkcontainer">
     <div class="maincontent">
 
-        <div class="video-wrapper">
-            <iframe src="//player.vimeo.com/video/70740642" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p><a href="http://vimeo.com/70740642">Luke Young Performance Surfboards</a> <a
-                    href="https://vimeo.com">Vimeo</a>.</p>
-        </div>
-
+        <video controls muted autoplay width="100%" poster="images/poster.png">
+            <source src="videos/luke-young-performance-surfboards-hd.mp4"
+                    type="video/mp4">
+        </video>
     </div>
 </div>
 
 <div class="lightcontainer">
     <div class="maincontent">
         <h2>Latest News</h2>
-
 
         <div class="section group">
             {% assign recentNews = site.categories.news | where: 'current', true | sort: 'date' | reverse %}
